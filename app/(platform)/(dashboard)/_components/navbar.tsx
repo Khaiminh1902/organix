@@ -6,6 +6,7 @@ import { Plus } from "lucide-react"
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
+import { MobileSidebar } from "./mobile-sidebar";
 
 const headingFont = localFont({
     src: "../../../fonts/CalSans-SemiBold.woff2",
@@ -14,6 +15,7 @@ const headingFont = localFont({
 export const Navbar = () => {
     return (
         <nav className="fixed z-50 top-0 px-4 w-full h-14 border-b shadow-sm bg-white flex items-center">
+            <MobileSidebar />
             <div className="flex items-center gap-x-4">
                 <div className="hidden md:flex">
                     <Link href="/select-org">
@@ -60,7 +62,6 @@ export const Navbar = () => {
                         },
                         variables: {
                             fontSize: "17px",
-                            fontFamily: "sans"
                         }
                     }}
                 />

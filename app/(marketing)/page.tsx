@@ -7,7 +7,7 @@ import { cn } from '@/lib/utils'
 import { Poppins } from "next/font/google"
 
 const headingFont = localFont({
-  src: "../fonts/CalSans-SemiBold.woff2"
+  src: "../fonts/CalSans-SemiBold.woff2",
 })
 
 const textFont = Poppins({
