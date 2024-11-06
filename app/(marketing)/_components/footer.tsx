@@ -1,9 +1,11 @@
 import { socialMedia } from "@/data";
+import Image from "next/image";
 import React from 'react'
+import World from '@/public/world.svg'
 
 export const Footer = () => {
   return (
-    <div className='fixed bottom-0 w-full h-14 p-4 border-t bg-slate-100 flex items-center justify-between'>
+    <div className='bg-white fixed bottom-0 h-14 flex items-center justify-between w-full p-4 border-t'>
         <span className='text-sm'>Copyright © 2024 Tony Nguyen</span>
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
